@@ -12,6 +12,7 @@ PROJECTS=$(gcloud projects list --format="value(projectId)")
 
 echo "Projects: $PROJECTS"
 
+# Iterate all projects and get the iam permissions  
 for project in $PROJECTS; do
     echo "Processing project: $project"
     # proj IAM
