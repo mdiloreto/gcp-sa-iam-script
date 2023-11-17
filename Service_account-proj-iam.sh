@@ -42,10 +42,10 @@ echo "Export completed: $output_csv"
 
 echo "Getting all IAM Permissions at organization level"
 
-# First, convert the output to JSON if it's not already
+# Use Google Cloud Assets API to sarch all the iam policies in json format
 gcloud asset search-all-iam-policies --scope=organizations/${organization_id} --format=json > policies.json
 
-# Now, process the JSON to extract and flatten the data
+#  process the JSON and conver to csv
 (
 echo "Project,Folder,Resource,Member,Role"
 jq -r '.[] | 
