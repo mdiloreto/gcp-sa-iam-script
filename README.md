@@ -4,8 +4,8 @@
 This script is designed to export the IAM permissions for service accounts across all projects within a Google Cloud Platform (GCP) organization and also for all your cloud assets using Google Cloud Assets API. It outputs the data in CSV format for easy auditing and review.
 
 ## Prerequisites
-
 Before running this script, you will need the following:
+- Enable Resource Manager, IAM and Cloud Assets APIs in GCP. 
 - Access to a GCP account with the necessary permissions to view IAM policies and service accounts.
 - The `gcloud` CLI installed and configured on your system.
 - The `jq` utility for processing JSON.
@@ -37,7 +37,7 @@ The script generates two CSV files:
    ```csv
    Project,ServiceAccount,Role,Member
    ```
-2. `service_accounts_iam_permissions_org.csv` - Contains service account permissions at the organization level.
+2. `service_accounts_iam_permissions_org.csv` - Contains service account permissions in al Assets at the organization level.
    ```csv
    Project,Folder,Resource,Member,Role
    ```
