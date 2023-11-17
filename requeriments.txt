@@ -1,2 +1,0 @@
-google-cloud-resource-manager
-google-cloud-assets
