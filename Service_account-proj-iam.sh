@@ -3,7 +3,7 @@
 output_csv="gcp_service_accounts_permissions.csv"
 # print header
 echo "Project,ServiceAccount,Role,Member" > "$output_csv"
-organization_id="84503491758"
+organization_id=""
 # Set timeout for gcloud commands
 GCLOUD_TIMEOUT=300
 
