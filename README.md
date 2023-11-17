@@ -47,8 +47,3 @@ The CSV files will be saved in the current directory from which the script is ex
 ## Contributing
 
 If you have suggestions for improving the script, please open an issue or pull request.
-
-## License
-
-Specify your license here or state that the project is licensed under the MIT License (if applicable).
-```
